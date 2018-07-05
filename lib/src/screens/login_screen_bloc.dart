@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
+import '../blocs/bloc.dart';
 
 class LoginScreenBloc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(20.0),
-      child: Form(
-          child: Column(
+      child: Column(
         children: <Widget>[
           emailField(),
           passwordField(),
           Container(margin: EdgeInsets.only(top: 25.0)),
           submitButton(),
         ],
-      )),
+      ),
     );
   }
 
